@@ -1,0 +1,152 @@
+
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+/* GENERAL */
+img {
+    max-width: 100%;
+    display: block;
+    cursor: pointer;
+}
+
+body {
+    background-color: #000;
+    font-family: 'Poppins';
+}
+button {
+    cursor: pointer;
+}
+
+
+.phone-screen {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+    /* height: 625px; */
+    max-width: 500px;
+    /* background-color: #fff; */
+    background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(247,248,251,1) 100%);
+    border-radius: 20px;
+}
+
+
+
+/* HEADER */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-height: 82px;
+    padding: .5em 1.5em;
+}
+
+.header__logo {
+    height: 42px;
+}
+
+.header__icon {
+    height: 30px;
+}
+
+
+    
+.card {
+    position: relative;
+
+}
+.card__main {
+    width: 100%;
+    height: 700px;
+    padding: .5em;
+    position: relative;
+}
+.card__img {
+    border-radius: 15px;
+}
+.card__info {
+    /* display: none; */
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 1em 2em;
+}
+.card__info__main {
+    color: #f8f8f8;
+    font-weight: 600;
+    font-size: 32px;
+    display: flex;
+    justify-content: start;
+    gap: 6px;
+    margin-bottom: -1em;
+
+    
+    
+}
+.card__bio {
+    color: #b7b7b7;
+    font-weight: 400;
+    font-size: 24px;
+    margin-top: 0;
+}
+
+
+.swipe-result {
+    display: none;
+    position: absolute;
+    top: 50px;
+    left: 20px;
+    width: 200px;
+    transform: rotate(-30deg);
+}
+
+
+/* FOOTER */
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5em;
+        height: 130px;
+
+}
+
+.post__footer {
+    padding: 2em 1em;
+
+} 
+
+.swipe__icon {
+        width: 40px;
+    display: inline-block;
+}
+
+.swipe__btn {
+    width: 90px;
+    height: 90px;
+    text-align: center;
+    line-height: 100px;
+    background-color: #fff;
+    border-radius: 50%;
+    border: none;
+    box-shadow: 0 5px 10px 5px #f3f3f3;
+    /* border: 1px solid black; */
+    transition: box-shadow 200ms ease-in-out;
+}
+
+.cross__btn:hover {
+    background-color: #ffe7ef;
+    box-shadow: 0 5px 10px 5px #EFE0E5;
+}
+
+.heart__btn:hover {
+    background-color: #dbfff4;
+    box-shadow: 0 5px 10px 5px #D5F2EB;
+}
